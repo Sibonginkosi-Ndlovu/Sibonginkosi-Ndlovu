@@ -1,89 +1,509 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sibonginkosi Ndlovu | Network Engineer</title>
+
+```
+<title>Sibonginkosi Ndlovu | Network Engineer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+        background: #f5f7fa;
+    }
+
+    /* Navigation */
+    nav {
+        background: #0f172a;
+        padding: 18px 20px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+        font-weight: normal;
+        color: #bae6fd;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 17px;
+        color: #e2e8f0;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: #7dd3fc;
+    }
+
+    /* Sections */
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 35px;
+        color: #0f172a;
+    }
+
+    /* About */
+    .about {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Skills */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .skill-card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .skill-card h3 {
+        color: #1d4ed8;
+        margin-bottom: 10px;
+    }
+
+    /* Experience */
+    .experience-card {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-left: 5px solid #2563eb;
+        border-radius: 8px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .experience-card h3 {
+        color: #1d4ed8;
+        margin-bottom: 5px;
+    }
+
+    .company {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .experience-card ul {
+        margin-left: 20px;
+    }
+
+    /* Certifications */
+    .certifications {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .certifications li {
+        margin-bottom: 12px;
+    }
+
+    /* Projects */
+    .project-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h3 {
+        color: #1d4ed8;
+        margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact {
+        background: #0f172a;
+        color: white;
+        max-width: none;
+        text-align: center;
+    }
+
+    .contact h2 {
+        color: white;
+    }
+
+    .contact a {
+        color: #38bdf8;
+        text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+        background: #020617;
+        color: #94a3b8;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        .hero h1 {
+            font-size: 34px;
+        }
+
+        .hero h2 {
+            font-size: 18px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 8px;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
+
+```
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- Hero Section -->
+<header class="hero">
 
     <h1>Sibonginkosi Ndlovu</h1>
 
     <h2>Network Engineer | IT Support | Networking | Cybersecurity</h2>
 
     <p>
-        Welcome to my portfolio. I am an IT professional with practical
-        experience in networking, IT support, server management and
-        troubleshooting.
+        IT professional with practical experience in networking,
+        IT support, server management, network troubleshooting
+        and IT infrastructure.
     </p>
+
+    <a href="#contact" class="button">Contact Me</a>
+
+</header>
+
+
+<!-- About -->
+<section id="about">
 
     <h2>About Me</h2>
 
-    <p>
-        I am passionate about networking and technology, with hands-on
-        experience supporting users, troubleshooting networks, managing
-        servers and working with IT infrastructure. I am also interested
-        in developing my skills in cybersecurity.
-    </p>
+    <div class="about">
 
-    <h2>Skills</h2>
+        <p>
+            I am an IT professional with hands-on experience in
+            networking, IT support, server management and
+            troubleshooting.
+        </p>
 
-    <ul>
-        <li>Network Troubleshooting</li>
-        <li>IT Support</li>
-        <li>Network Configuration</li>
-        <li>Server Management</li>
-        <li>Active Directory</li>
-        <li>Wi-Fi Installation</li>
-        <li>TCP/IP Networking</li>
-        <li>Cybersecurity Fundamentals</li>
-    </ul>
+        <br>
 
-    <h2>Experience</h2>
+        <p>
+            My experience includes supporting users, troubleshooting
+            network connectivity, monitoring and managing servers,
+            configuring network equipment, installing Wi-Fi,
+            managing Active Directory accounts and supporting
+            IT infrastructure.
+        </p>
 
-    <h3>IT Support Technician</h3>
-    <p>Limpopo Connexion</p>
+        <br>
 
-    <ul>
-        <li>Network and server troubleshooting</li>
-        <li>Server monitoring and management</li>
-        <li>Active Directory and user account management</li>
-        <li>Wi-Fi and network installations</li>
-        <li>Software installation and support</li>
-    </ul>
+        <p>
+            I am passionate about networking and technology and
+            continuously work on developing my technical skills.
+            I am particularly interested in building my career
+            in network engineering while also developing my
+            knowledge and experience in cybersecurity.
+        </p>
 
-    <h3>IT Support and Network Engineer</h3>
-    <p>Informatics Community Engagement Project</p>
+    </div>
 
-    <ul>
-        <li>Network configuration and troubleshooting</li>
-        <li>Windows installation and support</li>
-        <li>Server administration</li>
-        <li>Switch configuration</li>
-        <li>Network cabling</li>
-    </ul>
+</section>
 
-    <h2>Certifications</h2>
 
-    <ul>
-        <li>Oracle Cloud Infrastructure 2025 AI Foundations Associate</li>
-        <li>Student Academic Mentor</li>
-        <li>Networking Basics</li>
-        <li>Microsoft AI Fluency</li>
-      <li>Ethical hacker</li>
-    </ul>
+<!-- Skills -->
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Networking</h3>
+            <p>
+                TCP/IP, VLANs, DHCP, DNS, routing,
+                switching and network troubleshooting.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>IT Support</h3>
+            <p>
+                Hardware and software troubleshooting,
+                Windows support and user support.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Network Infrastructure</h3>
+            <p>
+                Routers, switches, access points,
+                Ethernet cabling and Wi-Fi installation.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Server Management</h3>
+            <p>
+                Server monitoring, troubleshooting,
+                setup and management.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Active Directory</h3>
+            <p>
+                User account management, domain joining
+                and basic Active Directory administration.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Cybersecurity</h3>
+            <p>
+                Cybersecurity fundamentals, network security
+                concepts and security awareness.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Experience -->
+<section id="experience">
+
+    <h2>Professional Experience</h2>
+
+
+    <div class="experience-card">
+
+        <h3>IT Support Technician</h3>
+
+        <p class="company">
+            Limpopo Connexion (LCX) | September 2025 – August 2026
+        </p>
+
+        <ul>
+            <li>Provide IT support and troubleshoot user technical issues.</li>
+            <li>Monitor and troubleshoot servers and network connectivity.</li>
+            <li>Manage Active Directory users and accounts.</li>
+            <li>Join computers to the company domain and assist with domain-related issues.</li>
+            <li>Configure routers and access points before installation.</li>
+            <li>Install and test Ethernet cables and network connections.</li>
+            <li>Install, configure and update software.</li>
+            <li>Assist with network and server management.</li>
+        </ul>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>IT Support and Network Engineer</h3>
+
+        <p class="company">
+            Informatics Community Engagement Project (ICEP) | June 2024 – May 2025
+        </p>
+
+        <ul>
+            <li>Provided IT support and network troubleshooting.</li>
+            <li>Configured and supported network equipment.</li>
+            <li>Installed and supported Windows operating systems.</li>
+            <li>Assisted with server administration.</li>
+            <li>Configured switches and supported network infrastructure.</li>
+            <li>Performed network cabling and connectivity troubleshooting.</li>
+            <li>Supported users with hardware and software issues.</li>
+        </ul>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>ICT Academic Mentor</h3>
+
+        <p class="company">
+            Tshwane University of Technology | February 2022 – December 2024
+        </p>
+
+        <ul>
+            <li>Provided academic support to students in ICT-related subjects.</li>
+            <li>Assisted students with technical and learning challenges.</li>
+            <li>Supported students in developing their understanding of ICT concepts.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- Certifications -->
+<section id="certifications">
+
+    <h2>Certifications & Training</h2>
+
+    <div class="certifications">
+
+        <ul>
+            <li>Oracle Cloud Infrastructure 2025 AI Foundations Associate</li>
+            <li>Cisco Networking Basics</li>
+            <li>Microsoft AI Fluency</li>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Ethical Hacking Training</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
 
     <h2>Projects</h2>
 
+    <div class="project-card">
+
+        <h3>Network Infrastructure Modernization Project</h3>
+
+        <p>
+            Designed and worked on a network modernization project
+            involving VLAN segmentation, DHCP, switching, routing,
+            network security, redundancy and improved network
+            infrastructure availability.
+        </p>
+
+        <br>
+
+        <p>
+            The project focused on improving network performance,
+            reducing single points of failure and providing a more
+            structured and secure network environment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
     <p>
-        Network infrastructure and modernization projects involving
-        VLANs, DHCP, network security, redundancy, switching and routing.
+        Email:
+        <a href="mailto:sbosharo@gmail.com">
+            sbosharo@gmail.com
+        </a>
     </p>
 
-    <h2>Contact</h2>
+    <br>
 
-    <p>Email: sbosharo@gmail.com</p>
+    <p>
+        I am open to opportunities in IT Support,
+        Networking, Network Engineering and Cybersecurity.
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 Sibonginkosi Ndlovu
+    </p>
+
+</footer>
+```
 
 </body>
 </html>
